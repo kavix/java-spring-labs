@@ -1,5 +1,4 @@
 package com.example.studentmanager.model; 
-  
 import jakarta.persistence.Column; 
 import jakarta.persistence.Entity; 
 import jakarta.persistence.GeneratedValue; 
@@ -45,7 +44,7 @@ public class Student {
   
     public Student() { 
 
-        
+
     } 
   
     public Long getId() { return id; } 

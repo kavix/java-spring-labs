@@ -1,5 +1,5 @@
 package com.example.studentmanager.controller; 
-  import com.example.studentmanager.model.Student; 
+import com.example.studentmanager.model.Student; 
 import com.example.studentmanager.service.StudentService; 
 import jakarta.validation.Valid; 
 import org.springframework.stereotype.Controller; 
