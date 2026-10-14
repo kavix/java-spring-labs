@@ -1,6 +1,6 @@
-package com.example.studentmanager.controller; 
-import com.example.studentmanager.model.Student; 
-import com.example.studentmanager.service.StudentService; 
+package com.example.student_manager.controller;
+import com.example.student_manager.model.Student;
+import com.example.student_manager.service.StudentService;
 import jakarta.validation.Valid; 
 import org.springframework.stereotype.Controller; 
 import org.springframework.ui.Model; 
@@ -69,7 +69,7 @@ public class StudentController {
         return service.findById(id) 
                 .map(s -> { 
                     model.addAttribute("student", s); 
-                    return "edit-student"; 
+                    return "edit-students";
                 }) 
                 .orElseGet(() -> { 
                     redirect.addFlashAttribute("error", "Student not found."); 
@@ -87,7 +87,7 @@ public class StudentController {
             result.rejectValue("email", "duplicate", "This email is already registered"); 
         } 
         if (result.hasErrors()) { 
-            return "edit-student"; 
+            return "edit-students";
         } 
         service.save(student); 
         redirect.addFlashAttribute("success", "Student updated successfully."); 
