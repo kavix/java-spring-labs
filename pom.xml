@@ -11,8 +11,8 @@
 	<groupId>com.example</groupId>
 	<artifactId>student-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name/>
-	<description/>
+	<name>student-manager</name>
+	<description>Student Registration System - Spring Boot, Thymeleaf, H2</description>
 	<url/>
 	<licenses>
 		<license/>

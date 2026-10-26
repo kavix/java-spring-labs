@@ -69,7 +69,7 @@ public class StudentController {
         return service.findById(id) 
                 .map(s -> { 
                     model.addAttribute("student", s); 
-                    return "edit-students";
+                    return "edit-student";
                 }) 
                 .orElseGet(() -> { 
                     redirect.addFlashAttribute("error", "Student not found."); 
@@ -87,7 +87,7 @@ public class StudentController {
             result.rejectValue("email", "duplicate", "This email is already registered"); 
         } 
         if (result.hasErrors()) { 
-            return "edit-students";
+            return "edit-student";
         } 
         service.save(student); 
         redirect.addFlashAttribute("success", "Student updated successfully."); 

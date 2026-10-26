@@ -23,7 +23,7 @@
     <h2>Register a Student</h2> 
     <form th:action="@{/students}" th:object="${student}" method="post" novalidate> 
  
-      <div th:replace="~{fragment :: fields}"></div>
+      <div th:replace="~{fragments :: fields}"></div>
       <button type="submit" class="btn primary">Save Student</button> 
     </form> 
   </section> 
