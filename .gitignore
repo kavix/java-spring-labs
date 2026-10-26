@@ -39,3 +39,7 @@ idea/
 project
 classpath
 settings/
+
+
+# H2 file-based database (Task 11 challenge)
+data/
